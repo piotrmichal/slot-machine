@@ -1,0 +1,52 @@
+html{
+	height: 100%;
+}
+body {
+	background: linear-gradient(to top left, #888, #303030)no-repeat;
+	background-size: cover;
+}
+#container {
+	width: 500px;
+	height: 280px;
+	padding: 20px;
+	box-sizing: border-box;
+	border-radius: 3px;
+	margin: 100px auto;
+	border: 1px solid #831900;
+	background: linear-gradient(to bottom right, #FE3900, #830300);
+}
+
+#display {
+	display: flex;
+	justify-content: space-between;
+}
+
+#display div {
+	padding: 8px;
+	border: 1px solid #303030;
+	border-radius: 3px;
+	background: linear-gradient(#888, #000);
+	box-sizing: border-box;
+
+}
+
+#control-panel {
+	margin: 30px auto;
+	text-align: center;
+}
+
+form input[type="button"] {
+	padding: 10px 50px;
+	border-radius: 4px;
+	border: 1px solid #FE3900;
+	background: linear-gradient(#FE9600, #FE3900);
+	font-weight: bold;
+	font-size: 16px;
+	color: #DDD;
+	letter-spacing: 1px
+}
+
+form input[type="button"]:hover {
+	background: linear-gradient(#FE3900, #831900);
+	color: #FFF;
+}
