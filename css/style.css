@@ -1,9 +1,15 @@
-html{
-	height: 100%;
-}
+html,
 body {
-	background: linear-gradient(to top left, #888, #303030)no-repeat;
-	background-size: cover;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: linear-gradient(to top left, #888, #303030);
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 #container {
 	width: 500px;
@@ -11,7 +17,6 @@ body {
 	padding: 20px;
 	box-sizing: border-box;
 	border-radius: 3px;
-	margin: 100px auto;
 	border: 1px solid #831900;
 	background: linear-gradient(to bottom right, #FE3900, #830300);
 }
@@ -27,7 +32,6 @@ body {
 	border-radius: 3px;
 	background: linear-gradient(#888, #000);
 	box-sizing: border-box;
-
 }
 
 #control-panel {

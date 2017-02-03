@@ -11,6 +11,7 @@ stop.addEventListener('click', stopDrawing, false);
 	
 	function startDrawing(){
 		var rand;
+		start.disabled = true;
 
 		rand = Math.floor(Math.random() * 9);
 		one.innerHTML = '<img src="css/img/' + icons[rand] + '.jpg">';
@@ -19,10 +20,10 @@ stop.addEventListener('click', stopDrawing, false);
 		rand = Math.floor(Math.random() * 9);
 		three.innerHTML = '<img src="css/img/' + icons[rand] + '.jpg">';
 
-		e = setTimeout('startDrawing()', 80);
+		e = setTimeout(startDrawing, 100);
 	}
-
 
 	function stopDrawing() {
  		quit = clearTimeout(e);
+ 		start.disabled = false;
  	}
